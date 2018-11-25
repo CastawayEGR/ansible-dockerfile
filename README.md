@@ -16,5 +16,5 @@ Copy the sources down and do the build
 To run and mount a local volume with playbooks:
 
 ```
-# docker run -itv /local/path/to/playbooks:/home/playbooks ansible:latest
+# docker run -d --name ansible -itv /local/path/to/playbooks:/home/playbooks ansible:latest
 ```

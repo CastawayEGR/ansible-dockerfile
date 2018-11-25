@@ -7,7 +7,7 @@ services:
 
 install:
   - docker build -t ansible .
-  - docker run -d --name ansible ansible-dockerfile
+  - docker run -d --name ansible ansible
 
 script:
   - docker ps | grep -q ansible

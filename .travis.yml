@@ -11,6 +11,3 @@ install:
 
 script:
   - docker ps | grep -q ansible
-  - ansible --verion
-  - pip show pyvmomi
-  - pip show ovirt-engine-sdk-python

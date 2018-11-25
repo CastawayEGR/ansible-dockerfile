@@ -12,8 +12,6 @@ RUN yum install gcc python-devel python-setuptools libxslt-devel libxml2-devel -
 
 RUN easy_install pip
 
-#RUN pip install ansible pyvmomi ovirt-engine-sdk-python
-
 ADD . /src
 
 RUN cd /src; pip install -r requirements.txt

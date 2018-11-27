@@ -11,10 +11,12 @@ CentOS 7 based Dockerfile for Ansible including Pyvmomi and Ovirt-Engine-SDK-Pyt
 Build
 ------------
 
-Copy the sources down and do the build
+Copy the source down and cd into folder.
+
+Build the docker image:
 
 ```
-# docker build --rm --tag ansible ansible-dockerfile
+# docker build --rm --tag ansible .
 ```
 
 Usage
@@ -24,4 +26,15 @@ To run and mount a local volume with playbooks:
 
 ```
 # docker run -d --name ansible -itv /local/path/to/playbooks:/home/playbooks ansible:latest
+```
+
+Composer Usage
+------------
+
+Edit docker-compose.yml and set local volume path.
+
+To get interactive shell:
+
+```
+# docker-compose run ansible
 ```

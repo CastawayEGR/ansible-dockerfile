@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ansible:
+    build: .
+    container_name: ansible
+    tty: true
+    stdin_open: true
+    volumes:
+      - /home/castawayegr/playbooks:/home/playbooks
+    working_dir: /home/playbooks

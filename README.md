@@ -38,3 +38,13 @@ To get interactive shell:
 ```
 # docker-compose run ansible
 ```
+
+License
+-------
+
+MIT/BSD
+
+Author Information
+------------------
+
+This Dockerfile was created by [Michael Tipton](https://ibeta.org).

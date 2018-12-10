@@ -28,7 +28,7 @@ To run and mount a local volume with playbooks:
 # docker run --name ansible -itv /local/path/to/playbooks:/home/playbooks ansible:latest
 ```
 
-Composer Usage
+Docker-Compose Usage
 ------------
 
 Edit docker-compose.yml and set local volume path.

@@ -25,7 +25,7 @@ Usage
 To run and mount a local volume with playbooks:
 
 ```
-# docker run -d --name ansible -itv /local/path/to/playbooks:/home/playbooks ansible:latest
+# docker run --name ansible -itv /local/path/to/playbooks:/home/playbooks ansible:latest
 ```
 
 Composer Usage

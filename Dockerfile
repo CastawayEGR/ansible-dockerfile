@@ -16,8 +16,6 @@ ADD . /src
 
 RUN cd /src; pip install -r requirements.txt
 
-RUN mkdir /home/playbooks && echo "cd /home/playbooks" >> /root/.bashrc
-
 WORKDIR /home/playbooks
 
 ENTRYPOINT ["/bin/bash"]

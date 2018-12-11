@@ -16,7 +16,7 @@ Copy the source down and cd into folder.
 Build the docker image:
 
 ```
-# docker build --rm --tag ansible .
+# docker build -t ansible .
 ```
 
 Usage

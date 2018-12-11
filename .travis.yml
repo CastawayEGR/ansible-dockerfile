@@ -8,6 +8,9 @@ services:
 install:
   - docker build -t ansible .
   - docker run -d -it --name ansible ansible
+  - docker ps | grep ansible
 
 script:
-  - docker ps | grep ansible
+  - docker run ansible -c "ansible --version" 
+  - docker run ansible -c "pip show pyvmomi" 
+  - docker run ansible -c "pip show ovirt-engine-sdk-python" 
